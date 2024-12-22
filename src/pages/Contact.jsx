@@ -71,8 +71,8 @@ const Contact = () => {
             {...register('phone', {
               required: 'Phone number is required',
               pattern: {
-                value: /^\d{10}$/,
-                message: 'Phone number must be 10 digits',
+                value: /^\d{11}$/,
+                message: 'Phone number must be 11 digits',
               },
             })}
             className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
